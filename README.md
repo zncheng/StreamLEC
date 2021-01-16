@@ -24,52 +24,52 @@ This source code showcases the prototype of StreamLEC and its usage.
     ```
     + Set up the library.
     ```
-    sudo cp libcodestream /usr/lib
+    sudo cp libstreamlec /usr/lib
     ```
 + Step 2: Compile example application.
-    + Here we show a simple application, i.e., vector multiplication (check `./apps/vector_multiplication/`).
-        + for each streaming item, simply multiply it with a constant vector.
-            + use default encoder.
-            + use default decoder and implement `Recompute` and `Aggregate`.
-            + implement a processor with pure linear computation, only implement `ProcessLinear`.
+    + Here we take the streaming logistic regression training as example (check `./apps/logistic_regression/`).
+        + We train a logistic regression model in real time using the provided sample input
+            + use default encoder in source.
+            + use default decoder and implement `Recompute` and `Aggregate` in the sink.
+            + implement the `ProcessData` interfaces in each processors
     + For compile
         + use the provided Makefile.
         ```
         make -j
         ```
 + Step 3: Run example application 
-    + Configuration
-        + check the configuration file in `./apps/vector_multiplication/sample.ini`.
+    + Configurations
+        + check the configuration file in `./apps/logistic_regression/sample.ini`.
             + k = 2, r = 1, micro_batch = 200.
     + Input trace
         + check `./apps/trace/sample.txt` for the example trace.
             + 5000 items, each with 12 attributes.
-    + Run in a local machine, go to application directory, `./apps/vector_multiplication`.
-        + open one terminal, run Encoder.
+    + Run in a local machine, go to application directory, `./apps/logistic_regression`.
+        + open one terminal, run the Source.
         ```
-        ./Encoder sample.ini Encoder
+        ./source sample.ini Encoder
         ```      
         + run 3 processors, each on a new terminal.
             + run processor 1
             ```
-                ./Processor sample.ini Processor1
+                ./processor sample.ini Processor1
             ```
             + run processor 2
             ```
-                ./Processor sample.ini Processor2
+                ./processor sample.ini Processor2
             ```
             + run processor 3
             ```
-                ./Processor sample.ini Processor3
+                ./processor sample.ini Processor3
             ```
-        + open another terminal, run Decoder
+        + open another terminal, run the sink
         ```
-        ./Decoder sample.ini Decoder
+        ./sink sample.ini Decoder
         ```      
-        + check the output results in Decoder
+        + check the output results in the sink
     + run in distributed mode
         + Set up the core library on each node
-            + copy the core library `libcodestream.so` to the `/usr/lib` directory of each node
+            + copy the core library `libstreamlec.so` to the `/usr/lib` directory of each node
         + change the configuration file
             + update the ip address of Encoder, Decoder, and each Processor
         + check the script in `./script` to run StreamLEC
@@ -81,16 +81,16 @@ This source code showcases the prototype of StreamLEC and its usage.
 
 ### Programming model
 + users can check the provided interfaces and templates for building application in directory `./programming`. 
-+ Encoder
-    + StreamLEC implements the RS code in encoder by default (check `./programming/encode_defualt.hpp`), users have no need to modify the source code if use RS codes.
-    + StreamLEC also allows users to deploy other erasure codes by implementing `ProcessEncode()` (check `./programming/encode_interface.hpp`).
-+ Decoder
-    + StreamLEC implements the RS code in decoder by default (check `./programming/decode_defualt.hpp`), users only need to implement the `Recompute` and `Aggregate` interfaces (check `./programming/decode_interface.hpp`).
-    + StreamLEC also allows users to deploy other erasure codes for decoder by implementing `ProcessDecode()` (check `./programming/decode_interface.hpp`).
++ source
+    + StreamLEC provides a default decoder based on RS code in the source (check `./programming/source_interfaces.hpp`), users have no need to modify the source code if use RS codes.
+    + StreamLEC also allows users to deploy other erasure codes by re-implementing the `Encode()` interfaces in `./programming/source_interface.hpp`).
++ sink
+    + StreamLEC also provides a default decoder based on RS code in the sink (check `./programming/sink_interface.hpp`), users only need to implement the `Recompute` and `Aggregate` interfaces (check `./programming/sink_interface.hpp`) for an applications.
+    + Users also needs to re-implementing `Decode()` interfaces if they want to uses a new erasure codes (check `./programming/sink_interface.hpp`).
 + Processor
     + For processor, users only need to fill in the required interfaces, check `./programming/processor_interface.hpp`.
         + if enable coded computation, users need to decouple the computation into two parts and fill in the `ProcessLinear` and `ProcessNonlinear`
-        + if use piggybacking only, users only need to fill in the `ProcessData` interface
+        + otherwise only need to fill in the `ProcessData` interface
         + fill in the `ProcessFeedback` interfaces if there are feedbacks in the applications
 
 ### Contact
