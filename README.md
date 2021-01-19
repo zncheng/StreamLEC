@@ -44,7 +44,7 @@ This source code showcases the prototype of StreamLEC and its usage.
     + Input trace
         + check `./apps/trace/sample.txt` for the example trace.
             + 10000 items, each with 12 attributes.
-    + Run pseudo distributed using a single machine, go to application directory, `./apps/logistic_regression`.
+    + Run pseudo distributed mode using a single machine
         + open one terminal, run the Source.
         ```
         ./source sample.ini Encoder
@@ -60,6 +60,8 @@ This source code showcases the prototype of StreamLEC and its usage.
         ./sink sample.ini Decoder
         ```      
         + check the output  in each terminal to see the progress
+    + Immediately failure recovery
+        + You can kill any *r* processors (e.g., 1 in this cases) during their running to verify the immediate recovery
     + run in distributed mode
         + Set up the core library on each node
             + copy the core library `libstreamlec.so` to the `/usr/lib` directory of each node
@@ -74,14 +76,14 @@ This source code showcases the prototype of StreamLEC and its usage.
 
 ### Programming model
 + users can check the provided interfaces and templates for building application in directory `./programming`. 
-+ source
-    + StreamLEC provides a default decoder based on RS code in the source (check `./programming/source_interfaces.hpp`), users have no need to modify the source code if use RS codes.
-    + StreamLEC also allows users to deploy other erasure codes by re-implementing the `Encode()` interfaces in `./programming/source_interface.hpp`).
-+ sink
-    + StreamLEC also provides a default decoder based on RS code in the sink (check `./programming/sink_interface.hpp`), users only need to implement the `Recompute` and `Aggregate` interfaces (check `./programming/sink_interface.hpp`) for an applications.
-    + Users also needs to re-implementing `Decode()` interfaces if they want to uses a new erasure codes (check `./programming/sink_interface.hpp`).
++ Source
+    + StreamLEC provides a default decoder based on RS code in the source (check `/source_interfaces.hpp`), users have no need to modify the source code if use RS codes.
+    + StreamLEC also allows users to deploy other erasure codes by re-implementing the `Encode()` interfaces in `source_interface.hpp`).
++ Sink
+    + StreamLEC also provides a default decoder based on RS code in the sink (check `sink_interface.hpp`), users only need to implement the `Recompute` and `Aggregate` interfaces (check `.sink_interface.hpp`) for an applications.
+    + Users also needs to re-implementing `Decode()` interfaces if they want to uses a new erasure codes (check `sink_interface.hpp`).
 + Processor
-    + For processor, users only need to fill in the required interfaces, check `./programming/processor_interface.hpp`.
+    + For processor, users only need to fill in the required interfaces, check `processor_interface.hpp`.
         + if enable coded computation, users need to decouple the computation into two parts and fill in the `ProcessLinear` and `ProcessNonlinear`
         + otherwise only need to fill in the `ProcessData` interface
         + fill in the `ProcessFeedback` interfaces if there are feedbacks in the applications
