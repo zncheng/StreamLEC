@@ -1,0 +1,349 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+Ack	out_callback_simple.hpp	/^    void Ack(void* data) {$/;"	f	class:afs::OutCallbackSimple
+AdapterBase	adapter_base.hpp	/^class AdapterBase {$/;"	c	namespace:afs
+AdapterDisk	adapter_disk.hpp	/^AdapterDisk::AdapterDisk() :$/;"	f	class:afs::AdapterDisk
+AdapterDisk	adapter_disk.hpp	/^class AdapterDisk : public AdapterBase {$/;"	c	namespace:afs
+AdapterRAM	adapter_ram.hpp	/^AdapterRAM::AdapterRAM() :$/;"	f	class:afs::AdapterRAM
+AdapterRAM	adapter_ram.hpp	/^class AdapterRAM : public AdapterBase {$/;"	c	namespace:afs
+AdapterRAM_d	adapter_ram_d.hpp	/^AdapterRAM_d::AdapterRAM_d() :$/;"	f	class:afs::AdapterRAM_d
+AdapterRAM_d	adapter_ram_d.hpp	/^class AdapterRAM_d : public AdapterBase {$/;"	c	namespace:afs
+AddComputeThread	worker.hpp	/^void Worker<InT, OutT, RInT, ROutT>::AddComputeThread(ComputeThread<InT, OutT, RInT, ROutT>* new_thread) {$/;"	f	class:afs::Worker
+AddDest	down_thread_net.hpp	/^void DownThreadNet<OutT, RInT>::AddDest(int dest_index, char* dest) {$/;"	f	class:afs::DownThreadNet
+AddDownThread	worker.hpp	/^void Worker<InT, OutT, RInT, ROutT>::AddDownThread(DownThread<OutT, RInT>* down_thread) {$/;"	f	class:afs::Worker
+AddExternDest	down_thread_mpsc.hpp	/^    void AddExternDest(int index, char* source) {}$/;"	f	class:afs::DownThreadMPSC
+AddOutQueue	in_callback_simple.hpp	/^    void AddOutQueue(void* q) {$/;"	f	class:afs::InCallbackSimple
+AddOutQueue	up_thread_net.hpp	/^void UpThreadNet<InT, ROutT>::AddOutQueue(ZeroRingBuffer<WInT>* q) {$/;"	f	class:afs::UpThreadNet
+AddOutQueue	up_thread_trace.hpp	/^void UpThreadTrace<T>::AddOutQueue(ZeroRingBuffer<WInT>* q) {$/;"	f	class:afs::UpThreadTrace
+AddOutQueue	up_thread_trace_afs.hpp	/^        void UpThreadTraceAFS<T>::AddOutQueue(ZeroRingBuffer<WInT>* q) {$/;"	f	class:afs::UpThreadTraceAFS
+AddReaderSource	down_thread_mpsc.hpp	/^    void AddReaderSource(int index, void* peer) {$/;"	f	class:afs::DownThreadMPSC
+AddReverseInBuffer	down_thread.hpp	/^    virtual void AddReverseInBuffer(ZeroRingBuffer<WRInT>* q) {$/;"	f	class:afs::DownThread
+AddReverseInBuffer	down_thread_net.hpp	/^    void AddReverseInBuffer(ZeroRingBuffer<WRInT>* q) {$/;"	f	class:afs::DownThreadNet
+AddSource	up_thread_net.hpp	/^void UpThreadNet<InT, ROutT>::AddSource(char* source) {$/;"	f	class:afs::UpThreadNet
+AddUpThread	worker.hpp	/^void Worker<InT, OutT, RInT, ROutT>::AddUpThread(UpThread<InT, ROutT>* up_thread) {$/;"	f	class:afs::Worker
+AssignCPU	thread.hpp	/^        void AssignCPU(int cpu) {$/;"	f	class:afs::ThreadBase
+Clean	adapter_disk.hpp	/^void AdapterDisk::Clean() {$/;"	f	class:afs::AdapterDisk
+Clean	adapter_ram.hpp	/^void AdapterRAM::Clean() {$/;"	f	class:afs::AdapterRAM
+Clean	adapter_ram_d.hpp	/^void AdapterRAM_d::Clean() {$/;"	f	class:afs::AdapterRAM_d
+Clean	in_callback_base.hpp	/^    virtual void Clean() {}$/;"	f	class:afs::InCallbackBase
+Clean	in_callback_simple.hpp	/^    void Clean() {$/;"	f	class:afs::InCallbackSimple
+Clean	out_callback_base.hpp	/^    virtual void Clean() {}$/;"	f	class:afs::OutCallbackBase
+Clean	out_callback_simple.hpp	/^    void Clean() {$/;"	f	class:afs::OutCallbackSimple
+ClearInput	compute_thread.hpp	/^    void ClearInput() {$/;"	f	class:afs::ComputeThread
+ComputeThread	compute_thread.hpp	/^ComputeThread<InT, OutT, RInT, ROutT>::ComputeThread($/;"	f	class:afs::ComputeThread
+ComputeThread	compute_thread.hpp	/^class ComputeThread : public ThreadBase {$/;"	c	namespace:afs
+ComputeThreadRecovery	compute_thread.hpp	/^    virtual void ComputeThreadRecovery() {};$/;"	f	class:afs::ComputeThread
+Connect	down_thread_net.hpp	/^void DownThreadNet<OutT, RInT>::Connect(int i, const char* addr_) {$/;"	f	class:afs::DownThreadNet
+ConnectDownThread	compute_thread.hpp	/^void ComputeThread<InT, OutT, RInT, ROutT>::ConnectDownThread(DownThread<OutT, RInT>* down_thread) {$/;"	f	class:afs::ComputeThread
+ConnectUpThread	compute_thread.hpp	/^void ComputeThread<InT, OutT, RInT, ROutT>::ConnectUpThread(UpThread<InT, ROutT>* up_thread) {$/;"	f	class:afs::ComputeThread
+Create	thread.cpp	/^void afs::ThreadBase::Create () {$/;"	f	class:afs::ThreadBase
+Destroy	thread.cpp	/^void afs::ThreadBase::Destroy () {$/;"	f	class:afs::ThreadBase
+DoRecovery	up_thread.hpp	/^    virtual void DoRecovery() {$/;"	f	class:afs::UpThread
+DownThread	down_thread.hpp	/^    DownThread() : ThreadBase(t_egress) {}$/;"	f	class:afs::DownThread
+DownThread	down_thread.hpp	/^class DownThread : public ThreadBase {$/;"	c	namespace:afs
+DownThreadMPSC	down_thread_mpsc.hpp	/^    DownThreadMPSC(int num_in, int num_out) :$/;"	f	class:afs::DownThreadMPSC
+DownThreadMPSC	down_thread_mpsc.hpp	/^class DownThreadMPSC : public DownThread {$/;"	c	namespace:afs
+DownThreadNet	down_thread_net.hpp	/^DownThreadNet<OutT, RInT>::DownThreadNet(uint64_t num_compute_thread$/;"	f	class:afs::DownThreadNet
+DownThreadNet	down_thread_net.hpp	/^class DownThreadNet : public DownThread<OutT, RInT> {$/;"	c	namespace:afs
+Emit	up_thread_trace.hpp	/^    void Emit(void* data, uint32_t len) {$/;"	f	class:afs::UpThreadTrace
+Emit	up_thread_trace_afs.hpp	/^            void Emit(void* data, uint32_t len) {$/;"	f	class:afs::UpThreadTraceAFS
+EmitData	compute_thread.hpp	/^    void EmitData(int dest, OutT& msg) {$/;"	f	class:afs::ComputeThread
+EmitData	compute_thread.hpp	/^    void EmitData(int worker_dest, int thr_dest, OutT& msg) {$/;"	f	class:afs::ComputeThread
+EmitDataAndWaitFeedback	compute_thread.hpp	/^    void EmitDataAndWaitFeedback(int dest, OutT& msg) {$/;"	f	class:afs::ComputeThread
+EmitDataAndWaitFeedback	compute_thread.hpp	/^    void EmitDataAndWaitFeedback(int dest_worker, int dest_thr, OutT& msg) {$/;"	f	class:afs::ComputeThread
+EmitFinish	compute_thread.hpp	/^    void EmitFinish() {$/;"	f	class:afs::ComputeThread
+EmitReverseData	compute_thread.hpp	/^    void EmitReverseData(int dest, ROutT& msg) {$/;"	f	class:afs::ComputeThread
+EmitReverseDataQuick	compute_thread.hpp	/^    void EmitReverseDataQuick(int dest, ROutT& msg) {$/;"	f	class:afs::ComputeThread
+EmitReverseDataQuick	compute_thread.hpp	/^    void EmitReverseDataQuick(int dest_worker,int dest_thr, ROutT& msg) {$/;"	f	class:afs::ComputeThread
+EmitReverseFinish	compute_thread.hpp	/^    void EmitReverseFinish() {$/;"	f	class:afs::ComputeThread
+EmitReverseTimeout	compute_thread.hpp	/^    void EmitReverseTimeout(int dest) {$/;"	f	class:afs::ComputeThread
+EmitReverseWrapData	compute_thread.hpp	/^    void EmitReverseWrapData(int dest, WROutT& msg) {$/;"	f	class:afs::ComputeThread
+EmitWrapData	compute_thread.hpp	/^    void EmitWrapData(int dest, WOutT& msg) {$/;"	f	class:afs::ComputeThread
+Flush	out_callback_base.hpp	/^    virtual void Flush() {}$/;"	f	class:afs::OutCallbackBase
+Flush	out_callback_simple.hpp	/^    void Flush() {$/;"	f	class:afs::OutCallbackSimple
+FlushReverseWriter	compute_thread.hpp	/^    void FlushReverseWriter() {$/;"	f	class:afs::ComputeThread
+GetDestination	in_callback_simple.hpp	/^    int GetDestination(void* data, uint32_t len) {$/;"	f	class:afs::InCallbackSimple
+GetDestination	router_rr.hpp	/^    int GetDestination(void* data, uint32_t len) {$/;"	f	class:afs::RouterRR
+GetDownstream	down_thread_net.hpp	/^    int GetDownstream() {$/;"	f	class:afs::DownThreadNet
+GetNumDownstream	compute_thread.hpp	/^    uint64_t GetNumDownstream() {$/;"	f	class:afs::ComputeThread
+GetNumUpstream	up_thread.hpp	/^    virtual int GetNumUpstream() {$/;"	f	class:afs::UpThread
+GetNumUpstream	up_thread_net.hpp	/^    int GetNumUpstream() {$/;"	f	class:afs::UpThreadNet
+GetOutBufferReader	down_thread_net.hpp	/^    MPSCReader<WOutT>* GetOutBufferReader(int i) {$/;"	f	class:afs::DownThreadNet
+GetReader	down_thread_mpsc.hpp	/^    void* GetReader(int index) {$/;"	f	class:afs::DownThreadMPSC
+GetReader	out_callback_simple.hpp	/^    void* GetReader() {$/;"	f	class:afs::OutCallbackSimple
+GetReaderNum	down_thread_mpsc.hpp	/^    int GetReaderNum() {$/;"	f	class:afs::DownThreadMPSC
+GetRemainUpstream	compute_thread.hpp	/^    int GetRemainUpstream() {$/;"	f	class:afs::ComputeThread
+GetRemaingSize	compute_thread.hpp	/^    int GetRemaingSize(){$/;"	f	class:afs::ComputeThread
+GetReverseOutBufferReader	up_thread.hpp	/^    virtual MPSCReader<WROutT>* GetReverseOutBufferReader(int i) {$/;"	f	class:afs::UpThread
+GetReverseOutBufferReader	up_thread_net.hpp	/^    MPSCReader<WROutT>* GetReverseOutBufferReader(int i) {$/;"	f	class:afs::UpThreadNet
+IOCallback	io_callback.hpp	/^class IOCallback {$/;"	c	namespace:afs
+InCallbackBase	in_callback_base.hpp	/^    InCallbackBase(int num_in): num_in_(num_in) {}$/;"	f	class:afs::InCallbackBase
+InCallbackBase	in_callback_base.hpp	/^class InCallbackBase : public IOCallback {$/;"	c	namespace:afs
+InCallbackSimple	in_callback_simple.hpp	/^    InCallbackSimple(int num_in) : $/;"	f	class:afs::InCallbackSimple
+InCallbackSimple	in_callback_simple.hpp	/^class InCallbackSimple : public InCallbackBase {$/;"	c	namespace:afs
+Init	adapter_disk.hpp	/^void AdapterDisk::Init() {$/;"	f	class:afs::AdapterDisk
+Init	adapter_ram.hpp	/^void AdapterRAM::Init() {$/;"	f	class:afs::AdapterRAM
+Init	adapter_ram_d.hpp	/^void AdapterRAM_d::Init() {$/;"	f	class:afs::AdapterRAM_d
+Init	in_callback_base.hpp	/^    virtual void Init() {}$/;"	f	class:afs::InCallbackBase
+Init	out_callback_base.hpp	/^    virtual void Init() {}$/;"	f	class:afs::OutCallbackBase
+Init	out_callback_simple.hpp	/^    void Init() {$/;"	f	class:afs::OutCallbackSimple
+IsReverse	down_thread.hpp	/^    virtual bool IsReverse() {$/;"	f	class:afs::DownThread
+IsReverse	down_thread_net.hpp	/^    bool IsReverse() {$/;"	f	class:afs::DownThreadNet
+IsReverse	up_thread.hpp	/^    virtual bool IsReverse() {$/;"	f	class:afs::UpThread
+IsReverse	up_thread_net.hpp	/^    bool IsReverse() {$/;"	f	class:afs::UpThreadNet
+Nonblock_EmitData	compute_thread.hpp	/^    int Nonblock_EmitData(int dest, OutT& msg) {$/;"	f	class:afs::ComputeThread
+Nonblock_EmitData	compute_thread.hpp	/^    int Nonblock_EmitData(int worker_dest, int thr_dest, OutT& msg) {$/;"	f	class:afs::ComputeThread
+NotifyThread	thread.cpp	/^void afs::ThreadBase::NotifyThread (afs_zmq::command_t::type_t type) {$/;"	f	class:afs::ThreadBase
+NotifyWorker	thread.cpp	/^void afs::ThreadBase::NotifyWorker(afs_zmq::command_t &cmd) {$/;"	f	class:afs::ThreadBase
+NotifyWorker	thread.cpp	/^void afs::ThreadBase::NotifyWorker(afs_zmq::command_t::type_t type) {$/;"	f	class:afs::ThreadBase
+OutCallbackBase	out_callback_base.hpp	/^    OutCallbackBase() : seq_(0), worker_id_(-1) {}$/;"	f	class:afs::OutCallbackBase
+OutCallbackBase	out_callback_base.hpp	/^class OutCallbackBase \/\/: public IOCallback$/;"	c	namespace:afs
+OutCallbackSimple	out_callback_simple.hpp	/^    OutCallbackSimple(int num_in) : OutCallbackBase(), num_in_(num_in), num_stop_(0), event_(0) {$/;"	f	class:afs::OutCallbackSimple
+OutCallbackSimple	out_callback_simple.hpp	/^class OutCallbackSimple : public OutCallbackBase {$/;"	c	namespace:afs
+ParseCPUAffinity	worker.hpp	/^void Worker<InT, OutT, RInT, ROutT>::ParseCPUAffinity(char* str) {$/;"	f	class:afs::Worker
+PrintAdapterNotFound	adapter_base.cpp	/^void PrintAdapterNotFound(const char* adapter_type) {$/;"	f	namespace:afs
+PrintUseBuiltinAdapter	adapter_base.cpp	/^void PrintUseBuiltinAdapter() {$/;"	f	namespace:afs
+ProcessFeedback	compute_thread.hpp	/^    virtual void ProcessFeedback(int src_worker, int src_thread, RInT& tuple) {$/;"	f	class:afs::ComputeThread
+PullRecord	out_callback_simple.hpp	/^    int PullRecord(void** data, uint32_t* len) {$/;"	f	class:afs::OutCallbackSimple
+PushRecord	in_callback_simple.hpp	/^int InCallbackSimple<T>::PushRecord(void* data, uint32_t len) {$/;"	f	class:afs::InCallbackSimple
+ReadRecord	adapter_disk.hpp	/^void AdapterDisk::ReadRecord(void** data, uint32_t *data_len) {$/;"	f	class:afs::AdapterDisk
+ReadRecord	adapter_ram.hpp	/^void AdapterRAM::ReadRecord(void** data, uint32_t *data_len) {$/;"	f	class:afs::AdapterRAM
+ReadRecord	adapter_ram_d.hpp	/^void AdapterRAM_d::ReadRecord(void** data, uint32_t *data_len) {$/;"	f	class:afs::AdapterRAM_d
+RouterBase	router_base.hpp	/^class RouterBase {$/;"	c	namespace:afs
+RouterRR	router_rr.hpp	/^    RouterRR(int max) : cur_(-1), max_(max) {}$/;"	f	class:afs::RouterRR
+RouterRR	router_rr.hpp	/^class RouterRR : public RouterBase {$/;"	c	namespace:afs
+SetAdapter	up_thread_trace.hpp	/^void UpThreadTrace<T>::SetAdapter(AdapterBase* adapter) {$/;"	f	class:afs::UpThreadTrace
+Start	worker.hpp	/^void Worker<InT, OutT, RInT, ROutT>::Start(int recovery) {$/;"	f	class:afs::Worker
+ThreadBase	thread.cpp	/^afs::ThreadBase::ThreadBase(afs::ThreadType type) : $/;"	f	class:afs::ThreadBase
+ThreadBase	thread.hpp	/^    class ThreadBase {$/;"	c	namespace:afs
+ThreadFinishHandler	compute_thread.hpp	/^void ComputeThread<InT, OutT, RInT, ROutT>::ThreadFinishHandler() {$/;"	f	class:afs::ComputeThread
+ThreadFinishHandler	down_thread_mpsc.hpp	/^    void ThreadFinishHandler() {$/;"	f	class:afs::DownThreadMPSC
+ThreadFinishHandler	down_thread_net.hpp	/^void DownThreadNet<OutT, RInT>::ThreadFinishHandler() {$/;"	f	class:afs::DownThreadNet
+ThreadFinishHandler	up_thread_net.hpp	/^void UpThreadNet<InT, ROutT>::ThreadFinishHandler() {$/;"	f	class:afs::UpThreadNet
+ThreadFinishHandler	up_thread_trace.hpp	/^void UpThreadTrace<T>::ThreadFinishHandler() {$/;"	f	class:afs::UpThreadTrace
+ThreadFinishHandler	up_thread_trace_afs.hpp	/^        void UpThreadTraceAFS<T>::ThreadFinishHandler() {$/;"	f	class:afs::UpThreadTraceAFS
+ThreadInitHandler	compute_thread.hpp	/^void ComputeThread<InT, OutT, RInT, ROutT>::ThreadInitHandler() {$/;"	f	class:afs::ComputeThread
+ThreadInitHandler	down_thread_mpsc.hpp	/^    void ThreadInitHandler() {$/;"	f	class:afs::DownThreadMPSC
+ThreadInitHandler	down_thread_net.hpp	/^void DownThreadNet<OutT, RInT>::ThreadInitHandler() {$/;"	f	class:afs::DownThreadNet
+ThreadInitHandler	up_thread_net.hpp	/^void UpThreadNet<InT, ROutT>::ThreadInitHandler() {$/;"	f	class:afs::UpThreadNet
+ThreadInitHandler	up_thread_trace.hpp	/^void UpThreadTrace<T>::ThreadInitHandler() {$/;"	f	class:afs::UpThreadTrace
+ThreadInitHandler	up_thread_trace_afs.hpp	/^        void UpThreadTraceAFS<T>::ThreadInitHandler() {$/;"	f	class:afs::UpThreadTraceAFS
+ThreadMainHandler	compute_thread.hpp	/^void ComputeThread<InT, OutT, RInT, ROutT>::ThreadMainHandler() {$/;"	f	class:afs::ComputeThread
+ThreadMainHandler	down_thread_mpsc.hpp	/^    void ThreadMainHandler() {$/;"	f	class:afs::DownThreadMPSC
+ThreadMainHandler	down_thread_net.hpp	/^void DownThreadNet<OutT, RInT>::ThreadMainHandler() {$/;"	f	class:afs::DownThreadNet
+ThreadMainHandler	up_thread_net.hpp	/^void UpThreadNet<InT, ROutT>::ThreadMainHandler() {$/;"	f	class:afs::UpThreadNet
+ThreadMainHandler	up_thread_trace.hpp	/^void UpThreadTrace<T>::ThreadMainHandler() {$/;"	f	class:afs::UpThreadTrace
+ThreadMainHandler	up_thread_trace_afs.hpp	/^        void UpThreadTraceAFS<T>::ThreadMainHandler() {$/;"	f	class:afs::UpThreadTraceAFS
+ThreadType	thread.hpp	/^    enum ThreadType {t_ingress=0, t_egress, t_compute_thread};$/;"	g	namespace:afs
+UpThread	up_thread.hpp	/^    UpThread() : ThreadBase(t_ingress), is_recovery(false) {}$/;"	f	class:afs::UpThread
+UpThread	up_thread.hpp	/^class UpThread : public ThreadBase {$/;"	c	namespace:afs
+UpThreadNet	up_thread_net.hpp	/^UpThreadNet<InT, ROutT>::UpThreadNet($/;"	f	class:afs::UpThreadNet
+UpThreadNet	up_thread_net.hpp	/^class UpThreadNet : public UpThread<InT, ROutT> {$/;"	c	namespace:afs
+UpThreadTrace	up_thread_trace.hpp	/^UpThreadTrace<InT>::UpThreadTrace($/;"	f	class:afs::UpThreadTrace
+UpThreadTrace	up_thread_trace.hpp	/^class UpThreadTrace : public UpThread<InT, NullClass> {$/;"	c	namespace:afs
+UpThreadTraceAFS	up_thread_trace_afs.hpp	/^        UpThreadTraceAFS<InT>::UpThreadTraceAFS($/;"	f	class:afs::UpThreadTraceAFS
+UpThreadTraceAFS	up_thread_trace_afs.hpp	/^        class UpThreadTraceAFS : public UpThread<InT, NullClass> {$/;"	c	namespace:afs
+WIN_DECAY	worker.hpp	/^enum WindowType {WIN_NO = 0, WIN_HOP, WIN_SLIDE, WIN_DECAY};$/;"	e	enum:afs::WindowType
+WIN_HOP	worker.hpp	/^enum WindowType {WIN_NO = 0, WIN_HOP, WIN_SLIDE, WIN_DECAY};$/;"	e	enum:afs::WindowType
+WIN_NO	worker.hpp	/^enum WindowType {WIN_NO = 0, WIN_HOP, WIN_SLIDE, WIN_DECAY};$/;"	e	enum:afs::WindowType
+WIN_SLIDE	worker.hpp	/^enum WindowType {WIN_NO = 0, WIN_HOP, WIN_SLIDE, WIN_DECAY};$/;"	e	enum:afs::WindowType
+WInT	compute_thread.hpp	/^typedef WrapItem<InT> WInT;$/;"	t	class:afs::ComputeThread
+WInT	up_thread.hpp	/^typedef WrapItem<InT> WInT;$/;"	t	class:afs::UpThread
+WInT	up_thread_net.hpp	/^typedef WrapItem<InT> WInT;$/;"	t	class:afs::UpThreadNet
+WInT	up_thread_trace.hpp	/^typedef WrapItem<InT> WInT;$/;"	t	class:afs::UpThreadTrace
+WInT	up_thread_trace_afs.hpp	/^            typedef WrapItem<InT> WInT;$/;"	t	class:afs::UpThreadTraceAFS
+WInT	worker.hpp	/^typedef WrapItem<InT> WInT;$/;"	t	class:afs::Worker
+WOutT	compute_thread.hpp	/^typedef WrapItem<OutT> WOutT;$/;"	t	class:afs::ComputeThread
+WOutT	down_thread.hpp	/^typedef WrapItem<OutT> WOutT;$/;"	t	class:afs::DownThread
+WOutT	down_thread_net.hpp	/^typedef WrapItem<OutT> WOutT;$/;"	t	class:afs::DownThreadNet
+WOutT	worker.hpp	/^typedef WrapItem<OutT> WOutT;$/;"	t	class:afs::Worker
+WRInT	compute_thread.hpp	/^typedef WrapItem<RInT> WRInT;$/;"	t	class:afs::ComputeThread
+WRInT	down_thread.hpp	/^typedef WrapItem<RInT> WRInT;$/;"	t	class:afs::DownThread
+WRInT	down_thread_net.hpp	/^typedef WrapItem<RInT> WRInT;$/;"	t	class:afs::DownThreadNet
+WRInT	worker.hpp	/^typedef WrapItem<RInT> WRInT;$/;"	t	class:afs::Worker
+WROutT	compute_thread.hpp	/^typedef WrapItem<ROutT> WROutT;$/;"	t	class:afs::ComputeThread
+WROutT	up_thread.hpp	/^typedef WrapItem<ROutT> WROutT;$/;"	t	class:afs::UpThread
+WROutT	up_thread_net.hpp	/^typedef WrapItem<ROutT> WROutT;$/;"	t	class:afs::UpThreadNet
+WROutT	worker.hpp	/^typedef WrapItem<ROutT> WROutT;$/;"	t	class:afs::Worker
+WaitThread	thread.cpp	/^int64_t afs::ThreadBase::WaitThread (afs_zmq::command_t* cmd, bool is_block) {$/;"	f	class:afs::ThreadBase
+WaitThread	thread.cpp	/^void afs::ThreadBase::WaitThread (afs_zmq::command_t::type_t type) {$/;"	f	class:afs::ThreadBase
+WaitWorker	thread.cpp	/^void afs::ThreadBase::WaitWorker (afs_zmq::command_t::type_t type, bool is_block) {$/;"	f	class:afs::ThreadBase
+WindowType	worker.hpp	/^enum WindowType {WIN_NO = 0, WIN_HOP, WIN_SLIDE, WIN_DECAY};$/;"	g	namespace:afs
+Worker	worker.hpp	/^Worker<InT, OutT, RInT, ROutT>::Worker(string worker_name, int id, string zkAddr, int num_compute_thread) :$/;"	f	class:afs::Worker
+Worker	worker.hpp	/^class Worker {$/;"	c	namespace:afs
+WrapT	in_callback_simple.hpp	/^typedef WrapItem<T> WrapT;$/;"	t	class:afs::InCallbackSimple
+WrapT	out_callback_simple.hpp	/^typedef WrapItem<T> WrapT;$/;"	t	class:afs::OutCallbackSimple
+__AFS_ADAPTER_DISK_HPP_INCLUDED__	adapter_disk.hpp	2;"	d
+__AFS_ADAPTER_RAM_DOUBLE_HPP_INCLUDED__	adapter_ram_d.hpp	2;"	d
+__AFS_ADAPTER_RAM_HPP_INCLUDED__	adapter_ram.hpp	2;"	d
+__AFS_COMPUTE_THREAD_HPP_INCLUDED__	compute_thread.hpp	2;"	d
+__AFS_INTHREAD_BASE_HPP_INCLUDED__	up_thread.hpp	2;"	d
+__AFS_INTHREAD_NET_HPP_INCLUDED__	up_thread_net.hpp	2;"	d
+__AFS_INTHREAD_TRACE_AFS_HPP_INCLUDED__	up_thread_trace_afs.hpp	2;"	d
+__AFS_INTHREAD_TRACE_HPP_INCLUDED__	up_thread_trace.hpp	2;"	d
+__AFS_IN_CALLBACK_BASE_HPP_INCLUDED__	in_callback_base.hpp	2;"	d
+__AFS_IN_CALLBACK_SIMPLE_HPP_INCLUDED__	in_callback_simple.hpp	2;"	d
+__AFS_IO_CALLBACK_HPP_INCLUDED__	io_callback.hpp	2;"	d
+__AFS_I_ADAPTER_HPP_INCLUDED__	adapter_base.hpp	2;"	d
+__AFS_OUTTHREAD_BASE_HPP_INCLUDED__	down_thread.hpp	2;"	d
+__AFS_OUTTHREAD_MPSC_HPP_INCLUDED__	down_thread_mpsc.hpp	2;"	d
+__AFS_OUTTHREAD_NET_HPP_INCLUDED__	down_thread_net.hpp	2;"	d
+__AFS_PULLER_BASE_HPP_INCLUDED__	out_callback_base.hpp	2;"	d
+__AFS_PULLER_SIMPLE_HPP_INCLUDED__	out_callback_simple.hpp	2;"	d
+__AFS_ROUTER_BASE_HPP_INCLUDED__	router_base.hpp	2;"	d
+__AFS_ROUTER_RR_HPP_INCLUDED__	router_rr.hpp	2;"	d
+__AFS_THREAD_HPP_INCLUDED__	thread.hpp	24;"	d
+__AFS_THREAD_ID_HPP_INCLUDED__	thread_id.cpp	24;"	d	file:
+__AFS_THREAD_ID_INCLUDED__	thread_id.hpp	2;"	d
+__AFS_WORKER_HPP_INCLUDED__	worker.hpp	2;"	d
+__thr_id	thread_id.cpp	/^thread_local int64_t __thr_id = -1;$/;"	m	namespace:afs	file:
+adapter_	up_thread_trace.hpp	/^    AdapterBase* adapter_;$/;"	m	class:afs::UpThreadTrace
+adapter_	up_thread_trace_afs.hpp	/^            AdapterBase* adapter_;$/;"	m	class:afs::UpThreadTraceAFS
+adapter_types	adapter_base.cpp	/^char adapter_types[] = "\\n    =============\\n"$/;"	m	namespace:afs	file:
+afs	adapter_base.cpp	/^namespace afs {$/;"	n	file:
+afs	adapter_base.hpp	/^namespace afs {$/;"	n
+afs	adapter_disk.hpp	/^namespace afs {$/;"	n
+afs	adapter_ram.hpp	/^namespace afs {$/;"	n
+afs	adapter_ram_d.hpp	/^namespace afs {$/;"	n
+afs	compute_thread.hpp	/^namespace afs {$/;"	n
+afs	down_thread.hpp	/^namespace afs {$/;"	n
+afs	down_thread_mpsc.hpp	/^namespace afs {$/;"	n
+afs	down_thread_net.hpp	/^namespace afs {$/;"	n
+afs	in_callback_base.hpp	/^namespace afs {$/;"	n
+afs	in_callback_simple.hpp	/^namespace afs {$/;"	n
+afs	io_callback.hpp	/^namespace afs {$/;"	n
+afs	out_callback_base.hpp	/^namespace afs {$/;"	n
+afs	out_callback_simple.hpp	/^namespace afs {$/;"	n
+afs	router_base.hpp	/^namespace afs {$/;"	n
+afs	router_rr.hpp	/^namespace afs {$/;"	n
+afs	thread.hpp	/^namespace afs {$/;"	n
+afs	thread_id.cpp	/^namespace afs {$/;"	n	file:
+afs	thread_id.hpp	/^namespace afs {$/;"	n
+afs	up_thread.hpp	/^namespace afs {$/;"	n
+afs	up_thread_net.hpp	/^namespace afs {$/;"	n
+afs	up_thread_trace.hpp	/^namespace afs {$/;"	n
+afs	up_thread_trace_afs.hpp	/^namespace afs {$/;"	n
+afs	worker.hpp	/^namespace afs {$/;"	n
+attr_num	adapter_ram_d.hpp	/^    int attr_num;$/;"	m	class:afs::AdapterRAM_d
+buf	adapter_disk.hpp	/^    char buf[MAX_RECORD_LENGTH];$/;"	m	class:afs::AdapterDisk
+buf_	adapter_ram.hpp	/^    unsigned char* buf_;$/;"	m	class:afs::AdapterRAM
+buf_	adapter_ram_d.hpp	/^    unsigned char* buf_;$/;"	m	class:afs::AdapterRAM_d
+check_protocol	down_thread_net.hpp	/^int DownThreadNet<OutT, RInT>::check_protocol (const std::string &protocol_)$/;"	f	class:afs::DownThreadNet
+check_protocol	up_thread_net.hpp	/^int UpThreadNet<InT, ROutT>::check_protocol (const std::string &protocol_)$/;"	f	class:afs::UpThreadNet
+cnt	adapter_disk.hpp	/^    unsigned long long int cnt;$/;"	m	class:afs::AdapterDisk
+compute_threads_	worker.hpp	/^    std::vector<ComputeThread<InT, OutT, RInT, ROutT>*> compute_threads_;$/;"	m	class:afs::Worker
+connect_addrs_	down_thread_net.hpp	/^    std::vector<std::string> connect_addrs_;$/;"	m	class:afs::DownThreadNet
+cpu_	thread.hpp	/^        int64_t cpu_;$/;"	m	class:afs::ThreadBase
+cur_	router_rr.hpp	/^    int cur_, max_;$/;"	m	class:afs::RouterRR
+cur_byte_	adapter_ram.hpp	/^    uint64_t cur_byte_;$/;"	m	class:afs::AdapterRAM
+cur_byte_	adapter_ram_d.hpp	/^    uint64_t cur_byte_;$/;"	m	class:afs::AdapterRAM_d
+cur_cnt_	adapter_ram.hpp	/^    uint64_t cur_cnt_;$/;"	m	class:afs::AdapterRAM
+cur_cnt_	adapter_ram_d.hpp	/^    uint64_t cur_cnt_;$/;"	m	class:afs::AdapterRAM_d
+down_thread_	worker.hpp	/^    DownThread<OutT, RInT>* down_thread_;$/;"	m	class:afs::Worker
+down_writer_	compute_thread.hpp	/^    MPSCWriter<WOutT>* down_writer_;$/;"	m	class:afs::ComputeThread
+emit_fail_	up_thread_trace.hpp	/^    uint64_t emit_fail_;$/;"	m	class:afs::UpThreadTrace
+emit_fail_	up_thread_trace_afs.hpp	/^            uint64_t emit_fail_;$/;"	m	class:afs::UpThreadTraceAFS
+emit_succ_	up_thread_trace.hpp	/^    uint64_t emit_succ_;$/;"	m	class:afs::UpThreadTrace
+emit_succ_	up_thread_trace_afs.hpp	/^            uint64_t emit_succ_;$/;"	m	class:afs::UpThreadTraceAFS
+event_	compute_thread.hpp	/^    uint64_t event_;$/;"	m	class:afs::ComputeThread
+event_	down_thread_net.hpp	/^    uint64_t event_;$/;"	m	class:afs::DownThreadNet
+event_	in_callback_simple.hpp	/^    int event_;$/;"	m	class:afs::InCallbackSimple
+event_	out_callback_simple.hpp	/^    size_t event_;$/;"	m	class:afs::OutCallbackSimple
+event_	up_thread_net.hpp	/^    uint64_t event_;$/;"	m	class:afs::UpThreadNet
+event_	up_thread_trace.hpp	/^    uint64_t event_;$/;"	m	class:afs::UpThreadTrace
+event_	up_thread_trace_afs.hpp	/^            uint64_t event_;$/;"	m	class:afs::UpThreadTraceAFS
+file_	adapter_disk.hpp	/^    FILE* file_;$/;"	m	class:afs::AdapterDisk
+get_thread_str	thread.hpp	/^        char* get_thread_str() {$/;"	f	class:afs::ThreadBase
+get_tid	thread.hpp	/^        int64_t get_tid() { return tid_; }$/;"	f	class:afs::ThreadBase
+get_wid	thread.hpp	/^        int64_t get_wid() { return wid_; }$/;"	f	class:afs::ThreadBase
+in_callback_	down_thread_net.hpp	/^    InCallbackBase* in_callback_;$/;"	m	class:afs::DownThreadNet
+in_callback_	up_thread_net.hpp	/^    InCallbackBase* in_callback_;$/;"	m	class:afs::UpThreadNet
+in_queue_	compute_thread.hpp	/^    ZeroRingBuffer<WInT>* in_queue_;$/;"	m	class:afs::ComputeThread
+is_recovery	up_thread.hpp	/^    bool is_recovery;$/;"	m	class:afs::UpThread
+is_stop_	compute_thread.hpp	/^    uint32_t* is_stop_;$/;"	m	class:afs::ComputeThread
+kThreadName	thread.hpp	/^    const char kThreadName[3][30] = {$/;"	m	namespace:afs
+last_ts_	adapter_ram.hpp	/^    uint64_t last_ts_;$/;"	m	class:afs::AdapterRAM
+last_ts_	adapter_ram_d.hpp	/^    uint64_t last_ts_;$/;"	m	class:afs::AdapterRAM_d
+listen_addr_	up_thread_net.hpp	/^    std::string listen_addr_;$/;"	m	class:afs::UpThreadNet
+main_to_thread_	thread.hpp	/^        afs_zmq::mailbox_t main_to_thread_;$/;"	m	class:afs::ThreadBase
+max	adapter_disk.hpp	/^    unsigned long long int max;$/;"	m	class:afs::AdapterDisk
+max_	router_rr.hpp	/^    int cur_, max_;$/;"	m	class:afs::RouterRR
+num_compute_thread_	down_thread_net.hpp	/^    size_t num_compute_thread_, num_downstream_;$/;"	m	class:afs::DownThreadNet
+num_compute_thread_	worker.hpp	/^    int num_compute_thread_;$/;"	m	class:afs::Worker
+num_downstream_	compute_thread.hpp	/^    int num_downstream_;$/;"	m	class:afs::ComputeThread
+num_downstream_	down_thread_net.hpp	/^    size_t num_compute_thread_, num_downstream_;$/;"	m	class:afs::DownThreadNet
+num_in_	down_thread_mpsc.hpp	/^    int num_in_, num_out_;$/;"	m	class:afs::DownThreadMPSC
+num_in_	in_callback_base.hpp	/^    int num_in_;$/;"	m	class:afs::InCallbackBase
+num_in_	out_callback_simple.hpp	/^    int num_in_;$/;"	m	class:afs::OutCallbackSimple
+num_out_	down_thread_mpsc.hpp	/^    int num_in_, num_out_;$/;"	m	class:afs::DownThreadMPSC
+num_stop_	in_callback_simple.hpp	/^    int num_stop_;$/;"	m	class:afs::InCallbackSimple
+num_stop_	out_callback_simple.hpp	/^    int num_stop_;$/;"	m	class:afs::OutCallbackSimple
+num_upstream_	compute_thread.hpp	/^    int num_upstream_;$/;"	m	class:afs::ComputeThread
+num_upstream_	up_thread_net.hpp	/^    int num_upstream_;$/;"	m	class:afs::UpThreadNet
+options_	down_thread_net.hpp	/^    afs_zmq::options_t* options_;$/;"	m	class:afs::DownThreadNet
+options_	up_thread_net.hpp	/^    afs_zmq::options_t* options_;$/;"	m	class:afs::UpThreadNet
+out_callbacks_	down_thread_net.hpp	/^    std::vector<OutCallbackBase*> out_callbacks_;$/;"	m	class:afs::DownThreadNet
+out_callbacks_	up_thread_net.hpp	/^    OutCallbackBase** out_callbacks_;$/;"	m	class:afs::UpThreadNet
+parse_uri	down_thread_net.hpp	/^int DownThreadNet<OutT, RInT>::parse_uri (const char *uri_,$/;"	f	class:afs::DownThreadNet
+parse_uri	up_thread_net.hpp	/^int UpThreadNet<InT, ROutT>::parse_uri (const char *uri_,$/;"	f	class:afs::UpThreadNet
+poller_	down_thread_net.hpp	/^    afs_zmq::epoll_t* poller_;$/;"	m	class:afs::DownThreadNet
+poller_	up_thread_net.hpp	/^    afs_zmq::epoll_t* poller_;$/;"	m	class:afs::UpThreadNet
+print_freq_	adapter_ram.hpp	/^    size_t print_freq_;$/;"	m	class:afs::AdapterRAM
+print_freq_	adapter_ram_d.hpp	/^    size_t print_freq_;$/;"	m	class:afs::AdapterRAM_d
+ptr_	adapter_ram.hpp	/^    uint64_t ptr_;$/;"	m	class:afs::AdapterRAM
+ptr_	adapter_ram_d.hpp	/^    uint64_t ptr_;$/;"	m	class:afs::AdapterRAM_d
+queues_	in_callback_simple.hpp	/^    std::vector<ZeroRingBuffer<WrapT>*> queues_;$/;"	m	class:afs::InCallbackSimple
+queues_	up_thread_trace.hpp	/^    std::vector<ZeroRingBuffer<WInT>*> queues_;$/;"	m	class:afs::UpThreadTrace
+queues_	up_thread_trace_afs.hpp	/^            std::vector<ZeroRingBuffer<WInT>*> queues_;$/;"	m	class:afs::UpThreadTraceAFS
+r_event_	compute_thread.hpp	/^    uint64_t r_event_;$/;"	m	class:afs::ComputeThread
+r_in_queue_	compute_thread.hpp	/^    ZeroRingBuffer<WRInT>* r_in_queue_;$/;"	m	class:afs::ComputeThread
+reader_	out_callback_simple.hpp	/^    MPSCReader<WrapT>* reader_;$/;"	m	class:afs::OutCallbackSimple
+readers_	down_thread_mpsc.hpp	/^    MPSCReader** readers_;$/;"	m	class:afs::DownThreadMPSC
+remain_upstream_	compute_thread.hpp	/^    int remain_upstream_;$/;"	m	class:afs::ComputeThread
+router_	up_thread_trace.hpp	/^    RouterBase* router_;$/;"	m	class:afs::UpThreadTrace
+router_	up_thread_trace_afs.hpp	/^            RouterBase* router_;$/;"	m	class:afs::UpThreadTraceAFS
+seq_	out_callback_base.hpp	/^    int seq_;$/;"	m	class:afs::OutCallbackBase
+set_thr_id	thread_id.cpp	/^void set_thr_id(int64_t id) {$/;"	f	namespace:afs
+set_tid	thread.hpp	/^        void set_tid(int id) { tid_ = id; }$/;"	f	class:afs::ThreadBase
+set_wid	thread.hpp	/^        void set_wid(int wid) { wid_ = wid; }$/;"	f	class:afs::ThreadBase
+set_worker_id	out_callback_base.hpp	/^    void set_worker_id(int id) {$/;"	f	class:afs::OutCallbackBase
+spid_	thread.hpp	/^        int64_t spid_;$/;"	m	class:afs::ThreadBase
+sppid_	thread.hpp	/^        int64_t sppid_;$/;"	m	class:afs::ThreadBase
+start_ts	in_callback_simple.hpp	/^    uint64_t start_ts, stop_ts;$/;"	m	class:afs::InCallbackSimple
+stop_ts	in_callback_simple.hpp	/^    uint64_t start_ts, stop_ts;$/;"	m	class:afs::InCallbackSimple
+stopped_	in_callback_simple.hpp	/^    std::vector<bool> stopped_;$/;"	m	class:afs::InCallbackSimple
+support_feedback_	down_thread_net.hpp	/^    bool support_feedback_;$/;"	m	class:afs::DownThreadNet
+support_feedback_	up_thread_net.hpp	/^    bool support_feedback_;$/;"	m	class:afs::UpThreadNet
+t_compute_thread	thread.hpp	/^    enum ThreadType {t_ingress=0, t_egress, t_compute_thread};$/;"	e	enum:afs::ThreadType
+t_egress	thread.hpp	/^    enum ThreadType {t_ingress=0, t_egress, t_compute_thread};$/;"	e	enum:afs::ThreadType
+t_ingress	thread.hpp	/^    enum ThreadType {t_ingress=0, t_egress, t_compute_thread};$/;"	e	enum:afs::ThreadType
+thr_id	thread_id.cpp	/^int64_t thr_id() {$/;"	f	namespace:afs
+thread_fun	thread.cpp	/^void afs::ThreadBase::thread_fun() {$/;"	f	class:afs::ThreadBase
+thread_instance_	thread.hpp	/^        std::thread* thread_instance_;$/;"	m	class:afs::ThreadBase
+thread_routine	thread.cpp	/^    static void *thread_routine (void *arg_)$/;"	f	file:
+thread_str_	thread.hpp	/^        char thread_str_[50];$/;"	m	class:afs::ThreadBase
+thread_to_main_	thread.hpp	/^        afs_zmq::mailbox_t thread_to_main_;$/;"	m	class:afs::ThreadBase
+tid_	thread.hpp	/^        int64_t tid_;$/;"	m	class:afs::ThreadBase
+tot_byte_	adapter_ram.hpp	/^    uint64_t tot_byte_;$/;"	m	class:afs::AdapterRAM
+tot_byte_	adapter_ram_d.hpp	/^    uint64_t tot_byte_;$/;"	m	class:afs::AdapterRAM_d
+tot_cnt_	adapter_ram.hpp	/^    uint64_t tot_cnt_;$/;"	m	class:afs::AdapterRAM
+tot_cnt_	adapter_ram_d.hpp	/^    uint64_t tot_cnt_;$/;"	m	class:afs::AdapterRAM_d
+type_	thread.hpp	/^        ThreadType type_;$/;"	m	class:afs::ThreadBase
+up_thread_	worker.hpp	/^    UpThread<InT, ROutT>* up_thread_;$/;"	m	class:afs::Worker
+up_writer_	compute_thread.hpp	/^    MPSCWriter<WROutT>* up_writer_;$/;"	m	class:afs::ComputeThread
+used_time_	up_thread_trace.hpp	/^    double used_time_;$/;"	m	class:afs::UpThreadTrace
+used_time_	up_thread_trace_afs.hpp	/^            double used_time_;$/;"	m	class:afs::UpThreadTraceAFS
+wid_	thread.hpp	/^        int64_t wid_;$/;"	m	class:afs::ThreadBase
+worker_id_	out_callback_base.hpp	/^    int worker_id_;$/;"	m	class:afs::OutCallbackBase
+worker_id_	worker.hpp	/^    int worker_id_;$/;"	m	class:afs::Worker
+worker_name_	worker.hpp	/^    std::string worker_name_;$/;"	m	class:afs::Worker
+~AdapterBase	adapter_base.hpp	/^    virtual ~AdapterBase() {}$/;"	f	class:afs::AdapterBase
+~DownThread	down_thread.hpp	/^    virtual ~DownThread() {}$/;"	f	class:afs::DownThread
+~DownThreadMPSC	down_thread_mpsc.hpp	/^    ~DownThreadMPSC() {$/;"	f	class:afs::DownThreadMPSC
+~DownThreadNet	down_thread_net.hpp	/^    ~DownThreadNet() {$/;"	f	class:afs::DownThreadNet
+~OutCallbackBase	out_callback_base.hpp	/^    virtual ~OutCallbackBase() {}$/;"	f	class:afs::OutCallbackBase
+~OutCallbackSimple	out_callback_simple.hpp	/^    ~OutCallbackSimple() {$/;"	f	class:afs::OutCallbackSimple
