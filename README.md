@@ -10,23 +10,21 @@ This source code showcases the prototype of StreamLEC and its usage.
 + StreamLEC also relies on ZMQ and iniparser (with source code built-in).
 ### Compiles and runs
 + Step 1: Build StreamLEC core library.
-    + Create a directory in project root directory (e.g., release).
+    + Create a directory in project root directory (e.g., release), create Make file, and build the code
     ``` 
     mkdir release && cd release
-    ``` 
-    + Create Makefile.
-    ```
     cmake ..
-    ``` 
-    + Complie source code.
-    ```
     make -j
     ```
     + Set up the library.
     ```
-    sudo cp libstreamlec /usr/lib
+    sudo cp libstreamlec.so /usr/lib
+    cd ..
     ```
 + Step 2: Compile example application.
+    + Provided applications
+        + Logistic regression training, without enabling hybrid coded computation
+        + Logistic regression prediction, eanbling hybrid coded computation
     + Here we take the streaming logistic regression training as example (check `./apps/logistic_regression/`).
         + We train a logistic regression model in real time using the provided sample input
             + use default encoder in source.
@@ -35,38 +33,33 @@ This source code showcases the prototype of StreamLEC and its usage.
     + For compile
         + use the provided Makefile.
         ```
+        cd apps/logistic_regression
         make -j
         ```
 + Step 3: Run example application 
     + Configurations
+        + one Source, one Sink, and three processors
         + check the configuration file in `./apps/logistic_regression/sample.ini`.
-            + k = 2, r = 1, micro_batch = 200.
+            + k = 2, r = 1, micro_batch size = 300.
     + Input trace
         + check `./apps/trace/sample.txt` for the example trace.
-            + 5000 items, each with 12 attributes.
-    + Run in a local machine, go to application directory, `./apps/logistic_regression`.
+            + 10000 items, each with 12 attributes.
+    + Run pseudo distributed using a single machine, go to application directory, `./apps/logistic_regression`.
         + open one terminal, run the Source.
         ```
         ./source sample.ini Encoder
         ```      
         + run 3 processors, each on a new terminal.
-            + run processor 1
-            ```
-                ./processor sample.ini Processor1
-            ```
-            + run processor 2
-            ```
-                ./processor sample.ini Processor2
-            ```
-            + run processor 3
-            ```
-                ./processor sample.ini Processor3
-            ```
+        ```
+        ./processor sample.ini Processor1
+        ./processor sample.ini Processor2
+        ./processor sample.ini Processor3
+        ```
         + open another terminal, run the sink
         ```
         ./sink sample.ini Decoder
         ```      
-        + check the output results in the sink
+        + check the output  in each terminal to see the progress
     + run in distributed mode
         + Set up the core library on each node
             + copy the core library `libstreamlec.so` to the `/usr/lib` directory of each node
