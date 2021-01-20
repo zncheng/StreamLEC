@@ -1,9 +1,9 @@
 #!/bin/bash
 
-node_name = {"testbed-node41", "testbed-node42", "testbed-node43", "testbed-node44", "testbed-node45"}
-codestream_path=/home/ncsgroup/CodeStream
+node_name = {"node1", "node2", "node3", "node", "node5"}
+streamlec_path=/home/ncsgroup/CodeStream
 
 for name in ${node_name[*]}
 do
-ssh $name  "cd  ${codestream_path}/script && ./stop.sh"
+ssh $name  "cd  ${streamlec_path}/script && ./stop.sh"
 done

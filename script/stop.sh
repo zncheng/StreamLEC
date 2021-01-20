@@ -1,5 +1,5 @@
 #!/bin/bash
 
-pkill -f Encoder
-pkill -f Decoder
-pkill -f Processor
+pkill -f source
+pkill -f sink
+pkill -f processor
