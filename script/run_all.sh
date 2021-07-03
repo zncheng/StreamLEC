@@ -1,8 +1,8 @@
 #!/bin/bash
 
 node_name = {"node1", "node2", "node3", "node4", "node5"}
-user=ncsgroup
-streamlec_path=/home/ncsgroup/StreamLEC
+user=streamlec
+streamlec_path=/home/StreamLEC
 
 
 ssh ${node_name[0]}  "cd  ${streamlec_path}/script && ./run.sh Encoder ${streamlec_path}/apps/sample/smple.ini Encoder"

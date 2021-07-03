@@ -10,7 +10,7 @@ This source code showcases the prototype of StreamLEC and its usage.
 + StreamLEC also relies on ZMQ and iniparser (with source code built-in).
 ### Compiles and runs
 + Step 1: Build StreamLEC core library.
-    + Create a directory in project root directory (e.g., release), create Make file, and build the code
+    + Create a directory in project root directory (e.g., release), create Makefile, and build the code
     ``` 
     mkdir release && cd release
     cmake ..
@@ -24,7 +24,7 @@ This source code showcases the prototype of StreamLEC and its usage.
 + Step 2: Compile example application.
     + Provided applications
         + Logistic regression training, without enabling hybrid coded computation
-        + Logistic regression prediction, eanbling hybrid coded computation
+        + Logistic regression prediction, enabling hybrid coded computation
     + Here we take the streaming logistic regression training as example (check `./apps/logistic_regression/`).
         + We train a logistic regression model in real time using the provided sample input
             + use default encoder in source.
@@ -59,9 +59,9 @@ This source code showcases the prototype of StreamLEC and its usage.
         ```
         ./sink sample.ini Decoder
         ```      
-        + check the output  in each terminal to see the progress
+        + check the output in each terminal to see the progress
     + Immediately failure recovery
-        + You can kill any *r* processors (e.g., 1 in this cases) during their running to verify the immediate recovery
+        + You can kill any *r* processors (e.g., 1 in this case) during their running to verify the immediate recovery
     + run in distributed mode
         + Set up the core library on each node
             + copy the core library `libstreamlec.so` to the `/usr/lib` directory of each node
