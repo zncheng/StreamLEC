@@ -4,8 +4,9 @@ This source code showcases the prototype of StreamLEC and its usage.
 
 # Publication
 + Zhinan Cheng, Lu Tang, Qun Huang, and Patrick P. C. Lee.
-  Enabling Low-Redundancy Proactive Fault Tolerance for Stream Machine Learning via Erasure Coding
+  [Enabling Low-Redundancy Proactive Fault Tolerance for Stream Machine Learning via Erasure Coding](http://www.cse.cuhk.edu.hk/~pclee/www/pubs/srds21streamlec.pdf)
   Proceedings of the 40th International Symposium on Reliable Distributed Systems (SRDS 2021), September 2021.
+
 
 
 # Running
