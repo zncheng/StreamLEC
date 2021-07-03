@@ -2,7 +2,13 @@
 + StreamLEC is a stream processing system that specifically designed for stream machine learning applications and provides lightweight proactive fault tolerance via erasure coding.
 This source code showcases the prototype of StreamLEC and its usage.
 
-# Examples
+# Publication
++ Zhinan Cheng, Lu Tang, Qun Huang, and Patrick P. C. Lee.
+  Enabling Low-Redundancy Proactive Fault Tolerance for Stream Machine Learning via Erasure Coding
+  Proceedings of the 40th International Symposium on Reliable Distributed Systems (SRDS 2021), September 2021.
+
+
+# Running
 ### Requirements
 + gcc and camke (version 2.6.4 or above), we have tested StreamLEC in Ubuntu 16.04 with gcc 5.4.0 and cmake 3.5.1.
 + CPU and compiler support SIMD instruction AVX and AVX2.
